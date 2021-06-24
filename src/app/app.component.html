@@ -1,60 +1,14 @@
-<app-navbar></app-navbar>
-<div class="clearfix">
-  <div class="container plr-30 pt-50 pb-30" ng-app="myApp" ng-controller="myCtrl">
-    <div class="indent-header">
-      <div class="slider-1 clearfix">
-
-        <div class="flex-container">
-          <div class="flexslider loading">
-            <ul class="slides">
-
-              <!-- SLIDE 1 -->
-              <li style="background:url(/assets/images/BMHeader.jpg) no-repeat;background-position:50% 0">
-
-                <div class="container">
-                  <div class="sixteen columns contain" style="margin-right:40px">
-                    <h2 data-toptitle="38%" class="norm-50-wide norm-40-768-959 font-light font-black top-28-767 flex-top-bot">BHARAT MANE<br><span class="bold">CODER</span></h2>
-                    <p data-bottomtext="30%" class="bot-15-767 flex-bot-top">
-                      <a class="button medium thin hover-dark tp-button black" href="https://github.com/bharatmane">SEE MORE</a>
-                    </p>
-                  </div>
-                </div><!-- End Container -->
-
-              </li><!-- End item -->
-              <!-- SLIDE 2 -->
-              <li style="background:url(/assets/images/BMHeader_Run.jpg) no-repeat; background-position:50% 0">
-
-                <div class="container">
-                  <div class="sixteen columns contain" style="margin-right:40px">
-                    <h2 data-toptitle="38%" class="norm-50-wide norm-40-768-959 font-light font-black right-text top-28-767 flex-top-bot">BHARAT MANE<br><span class="bold">RUNNER</span></h2>
-                    <p data-bottomtext="30%" class="bot-15-767 flex-bot-top right-text">
-                      <a class="button medium thin hover-dark tp-button black" href="runner.html">SEE MORE</a>
-                    </p>
-
-                  </div>
-                </div>
-
-              </li>
-              <!-- SLIDE 3 -->
-              <li style="background:url(/assets/images/BMHeader_Photographer.jpg) no-repeat;background-position:50% 0">
-
-                <div class="container">
-                  <div class="sixteen columns contain" style="margin-right:40px">
-                    <h2 data-toptitle="38%" class="norm-50-wide norm-40-768-959 font-light font-white top-28-767 flex-top-bot">BHARAT MANE<br><span class="bold">PHOTOGRAPHER</span></h2>
-                    <p data-bottomtext="30%" class="bot-15-767 flex-bot-top">
-                      <a class="button medium thin hover-dark tp-button white" href="photographer.html">SEE MORE</a>
-                    </p>
-                  </div>
-                </div><!-- End Container -->
-
-              </li><!-- End item -->
-
-
-            </ul>
-          </div>
-        </div>
-
-      </div><!-- End slider -->
-    </div>
+<div class="app grey-light-bg " >
+  <div id="header">
+    <app-navbar></app-navbar>
+  </div>
+  
+ 
+  <div id="content" class="container content mt-3">
+    <router-outlet></router-outlet>
+  </div>
+  <div id="footer" class="white-bg">
+    <app-footer></app-footer>
   </div>
 </div>
+
