@@ -1,0 +1,32 @@
+<div class="page-title-cont page-title-small grey-light-bg plr-30 " style="padding-bottom: 20px;">
+    <div class="relative container align-left">
+      <div class="row">
+        
+        <div class="col-md-8">
+          <h1 class="page-title" style="margin-top: 10px;">QUOTES</h1>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+<div class="grey-light-bg plr-30 plr-0-767 clearfix">    
+    <!-- COTENT CONTAINER -->
+    <div class="white-bg plr-30 pt-50 pb-30">
+    
+      <div class="relative">
+        <!-- PORTFOLIO FILTER -->                    
+        <div class="port-filter text-center text-left-767">
+          <a href="#" class="filter active" data-filter="*">2021</a>
+          <a href="#" class="filter" data-filter=".development">2020</a>
+          <a href="#" class="filter" data-filter=".design">2019</a>
+          <a href="#" class="filter" data-filter=".photography">2019</a>
+        </div>                    
+                
+        <ul  class="port-grid display-hover-on-mobile port-grid-3 masonry clearfix" id="items-grid">
+        <li *ngFor="let quote of array_quotes" role="button" class="port-item mix design">
+            <img src="{{quote}}">
+        </li>
+        </ul>
+      </div>
+      </div>
+</div>
