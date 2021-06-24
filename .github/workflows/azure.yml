@@ -19,6 +19,7 @@
 #   release:
 #     types: [created]
 
+on:
 push:
     branches: [ main ]
   pull_request:
