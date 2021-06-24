@@ -49,4 +49,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GH_PAGES }}
           BRANCH: gh-pages
-          FOLDER: deploy_dist/sample
+          FOLDER: deploy_dist/craftsman
