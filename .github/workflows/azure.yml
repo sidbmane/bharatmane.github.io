@@ -19,6 +19,7 @@
 #   release:
 #     types: [created]
 
+name: github pages
 on:
 push:
     branches: [ main ]
