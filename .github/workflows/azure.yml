@@ -22,9 +22,9 @@
 name: github pages
 on:
 push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 env:
   AZURE_WEBAPP_NAME: bharat-mane    # set this to your application's name
