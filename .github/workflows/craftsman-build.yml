@@ -53,5 +53,5 @@ jobs:
       - name: copy file
         uses: canastro/copy-file-action@master
         with:
-          source: "../gh-pages/index.html"
-          target: "../gh-pages/404.html"
+          source: "/home/runner/work/bharatmane.github.io/bharatmane.github.io/gh-pages/index.html"
+          target: "/home/runner/work/bharatmane.github.io/bharatmane.github.io/gh-pages/404.html"
