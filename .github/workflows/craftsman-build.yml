@@ -50,8 +50,16 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_PAGES }}
           BRANCH: gh-pages
           FOLDER: deploy_dist/craftsman
-      - name: copy file
-        uses: canastro/copy-file-action@master
+      - name: Copycat
+        uses: andstor/copycat-action@v3
         with:
-          source: "/home/runner/work/bharatmane.github.io/bharatmane.github.io/gh-pages/index.html"
-          target: "/home/runner/work/bharatmane.github.io/bharatmane.github.io/gh-pages/404.html"
+          personal_token: ${{ secrets.GH_PAGES }}
+          src_path: /gh-pages/index.html
+          dst_path: /gh-pages/404.html
+          dst_owner: bharatmane
+          dst_repo_name: bharatmane.github.io
+          dst_branch: gh-pages
+          src_branch: gh-pages
+          username: bharatmane
+          email: bharat.mane@gmail.com
+      
