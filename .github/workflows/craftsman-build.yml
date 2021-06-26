@@ -54,12 +54,6 @@ jobs:
         uses: andstor/copycat-action@v3
         with:
           personal_token: ${{ secrets.GH_PAGES }}
-          src_path: /gh-pages/index.html
-          dst_path: /gh-pages/404.html
-          dst_owner: bharatmane
-          dst_repo_name: bharatmane.github.io
-          dst_branch: gh-pages
-          src_branch: gh-pages
-          username: bharatmane
+          run: echo path is ${GITHUB_WORKSPACE}
           email: bharat.mane@gmail.com
       
