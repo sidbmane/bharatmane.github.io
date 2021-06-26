@@ -50,10 +50,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_PAGES }}
           BRANCH: gh-pages
           FOLDER: deploy_dist/craftsman
-      - name: Copycat
-        uses: andstor/copycat-action@v3
-        with:
-          personal_token: ${{ secrets.GH_PAGES }}
-          run: echo path is ${GITHUB_WORKSPACE}
-          email: bharat.mane@gmail.com
-      
+          
